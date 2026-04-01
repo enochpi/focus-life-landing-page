@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Life — Grow Your World, One Session at a Time</title>
+  <meta name="description" content="Gamified focus timer — grow your cave into a house by staying productive. Download Focus Life free on Android.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@rive-app/canvas@latest"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Focus<span>Life</span> 🌱</div>
+    <a href="#download" class="nav-cta">🌿 Get Early Access</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="sun"></div>
+
+    <div class="cloud cloud-1"><div class="cloud-body"></div></div>
+    <div class="cloud cloud-2"><div class="cloud-body"></div></div>
+    <div class="cloud cloud-3"><div class="cloud-body"></div></div>
+
+    <div class="birds">
+      <div class="bird">🐦</div>
+      <div class="bird">🐦</div>
+      <div class="bird">🐦</div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-tag">🌱 Free Forever · No Account · Android</div>
+      <h1>Turn focus<em>into progress!</em></h1>
+      <p class="hero-sub">
+        Earn peas, upgrade your home from a cave to a house, and build
+        real focus habits — one sunny session at a time. 🌻
+      </p>
+      <div class="hero-trust">
+        <span>✅ Free forever</span>
+        <span>✅ Works offline</span>
+        <span>✅ No account needed</span>
+      </div>
+      <div class="hero-buttons">
+        <a href="#download" class="btn-primary">🌿 Download Free</a>
+        <a href="#how" class="btn-secondary">See how it works →</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="phone-house">🏡</div>
+          <div class="phone-label">Your Home</div>
+          <div class="phone-bar"><div class="phone-bar-fill"></div></div>
+          <div class="phone-stats">
+            <div class="phone-stat">
+              <div class="phone-stat-val">🌱 847</div>
+              <div class="phone-stat-label">Peas</div>
+            </div>
+            <div class="phone-stat">
+              <div class="phone-stat-val">🪙 12</div>
+              <div class="phone-stat-label">Coins</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="phone-glow"></div>
+    </div>
+
+    <!-- Farm ground scene -->
+    <div class="hero-ground">
+      <div class="ground-hill"></div>
+      <div class="fence">
+        <div class="fence-rail fence-rail-top"></div>
+        <div class="fence-rail fence-rail-bottom"></div>
+        <div class="fence-posts">
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+        </div>
+      </div>
+      <div class="crops-row">
+        <div class="crop">🌻</div>
+        <div class="crop">🌱</div>
+        <div class="crop">🌾</div>
+        <div class="crop">🥕</div>
+        <div class="crop">🌿</div>
+        <div class="crop">🌻</div>
+        <div class="crop">🌱</div>
+        <div class="crop">🌾</div>
+        <div class="crop">🌿</div>
+        <div class="crop">🌻</div>
+      </div>
+
+      <!-- FARMER -->
+      <div class="farmer">
+        <img src="farmer.png" alt="farmer" id="farmer-img">
+        <div class="speech-bubble" id="speech-bubble">Ready to grow your focus?<br>Download Focus Life now! 🌱</div>
+      </div>
+
+      <div class="ground-dirt"></div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" style="padding-top: 0;">
+    <div class="how-section reveal">
+      <span class="section-tag">The Loop</span>
+      <h2 class="section-title">Simple. Satisfying. Actually works. 🎯</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <span class="step-icon">⏱️</span>
+          <h3 class="step-title">Focus on your task</h3>
+          <p class="step-desc">Start a session and lock in. Blocked apps keep distractions away while you work.</p>
+          <div class="step-connector">→</div>
+        </div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <span class="step-icon">🌱</span>
+          <h3 class="step-title">Earn peas & coins</h3>
+          <p class="step-desc">Every minute of focus grows your harvest. Longer sessions, bigger rewards.</p>
+          <div class="step-connector">→</div>
+        </div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <span class="step-icon">🏡</span>
+          <h3 class="step-title">Upgrade your world</h3>
+          <p class="step-desc">From a cave to a shack to a full house — watch your space evolve with every session.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- WHY IT WORKS -->
+  <section id="why">
+    <span class="section-tag reveal">Psychology</span>
+    <h2 class="section-title reveal">Why it actually works. 🧠</h2>
+    <p class="section-sub reveal">Focus Life isn't just a timer. It's built around how your brain forms habits.</p>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon">👁️</div>
+        <h3 class="why-title">Visual progress</h3>
+        <p class="why-desc">Watching your home grow from a cave to a house gives your brain a concrete reason to keep going. Progress you can see = motivation that sticks.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🎯</div>
+        <h3 class="why-title">Reward loop</h3>
+        <p class="why-desc">Every session ends with a reward — peas, coins, upgrades. Your brain releases dopamine on completion, making the next session easier to start.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🔥</div>
+        <h3 class="why-title">Streak building</h3>
+        <p class="why-desc">Streaks create commitment. Missing a day feels like losing something real — exactly the pressure that turns focus into a daily habit.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <span class="section-tag reveal">Features</span>
+    <h2 class="section-title reveal">Built different. 🌾</h2>
+    <p class="section-sub reveal">Not just another timer. Focus Life makes productivity feel like a game worth playing.</p>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <span class="feature-icon">🧠</span>
+        <h3 class="feature-title">Focus timer that motivates</h3>
+        <p class="feature-desc">See your peas grow in real time. Every second counts toward your next upgrade.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">🏡</span>
+        <h3 class="feature-title">Your space evolves</h3>
+        <p class="feature-desc">Start in a cave. Unlock a shack. Build your house. Progress you can actually see.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">🔒</span>
+        <h3 class="feature-title">Distraction-free mode</h3>
+        <p class="feature-desc">Block social media and time-wasting apps automatically during focus sessions.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">📈</span>
+        <h3 class="feature-title">Streaks & achievements</h3>
+        <p class="feature-desc">Build daily habits with streak tracking and 40+ achievements to unlock.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">🛋️</span>
+        <h3 class="feature-title">Furniture & upgrades</h3>
+        <p class="feature-desc">Spend coins on furniture that boosts your pea production. Strategy matters.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">🌿</span>
+        <h3 class="feature-title">Offline & lightweight</h3>
+        <p class="feature-desc">No account needed. Works offline. Your data stays on your device.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SCREENSHOTS -->
+  <section id="screenshots" class="screenshots-section">
+    <span class="section-tag reveal">Preview</span>
+    <h2 class="section-title reveal">See it in action. 📱</h2>
+    <p class="section-sub reveal" style="margin: 0 auto;">Real screenshots coming soon — the app is live, the grind is real! 🌱</p>
+    <div class="screenshots-row">
+      <div class="screenshot-placeholder reveal">
+        <span class="ph-icon">🏔️</span>
+        <span class="screenshot-label">Cave Stage</span>
+      </div>
+      <div class="screenshot-placeholder reveal">
+        <span class="ph-icon">⏱️</span>
+        <span class="screenshot-label">Focus Session</span>
+      </div>
+      <div class="screenshot-placeholder reveal">
+        <span class="ph-icon">🏡</span>
+        <span class="screenshot-label">House Stage</span>
+      </div>
+      <div class="screenshot-placeholder reveal">
+        <span class="ph-icon">🛒</span>
+        <span class="screenshot-label">Upgrade Shop</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <span class="section-tag reveal">FAQ</span>
+    <h2 class="section-title reveal">Common questions. 💬</h2>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-q">Is Focus Life free? <span class="faq-arrow">+</span></div>
+        <div class="faq-a">Yes, completely free to download and play. No ads, no paywalls, no subscriptions — free forever! 🎉</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What are peas? <span class="faq-arrow">+</span></div>
+        <div class="faq-a">Peas are your focus energy — the in-game currency you earn from completing focus sessions. Convert them into coins to buy upgrades and furniture for your home. 🌱</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Does it work offline? <span class="faq-arrow">+</span></div>
+        <div class="faq-a">Yes! Everything runs on your device — no internet connection required after download.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is it like a Pomodoro timer? <span class="faq-arrow">+</span></div>
+        <div class="faq-a">Similar concept, but way more rewarding! You set your own session length (up to 7 hours) and earn peas based on how long you focus.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What platforms is it on? <span class="faq-arrow">+</span></div>
+        <div class="faq-a">Currently Android only. iOS is on the roadmap! 🍎</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Will my progress be saved? <span class="faq-arrow">+</span></div>
+        <div class="faq-a">Yes! Everything is saved locally on your device. You can also export and import your save data from settings.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-section" id="download">
+    <div class="cta-bg"></div>
+    <div class="cta-content reveal">
+      <h2 class="cta-title">Start focusing today! 🌻</h2>
+      <p class="cta-sub">Your farm is waiting. First session takes 30 seconds to start.</p>
+      <div class="store-buttons">
+        <a href="#" class="store-btn store-btn-coming">
+          <span class="store-btn-icon">🤖</span>
+          <div class="store-btn-text">
+            <small>Coming soon to</small>
+            <strong>Google Play</strong>
+          </div>
+          <span class="coming-badge">Soon</span>
+        </a>
+        <a href="#" class="store-btn store-btn-coming">
+          <span class="store-btn-icon">🍎</span>
+          <div class="store-btn-text">
+            <small>Coming soon to</small>
+            <strong>App Store</strong>
+          </div>
+          <span class="coming-badge">Soon</span>
+        </a>
+      </div>
+      <div class="waitlist-box">
+        <p class="waitlist-label">🌱 Get notified when it launches:</p>
+        <div class="waitlist-form">
+          <input type="email" placeholder="your@email.com" class="waitlist-input">
+          <button class="waitlist-btn">Notify me! 🎉</button>
+        </div>
+        <p class="waitlist-sub">Built by a solo dev. No spam, ever.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Focus<span>Life</span> 🌱 — by SpartaLabs</div>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact</a>
+      <a href="https://spartalabs.app">spartalabs.app</a>
+    </div>
+    <div class="footer-copy">© 2025 SpartaLabs. All rights reserved. Made with ❤️ and ☀️</div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
