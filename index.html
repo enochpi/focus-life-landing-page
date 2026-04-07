@@ -332,5 +332,68 @@
   </footer>
 
   <script src="main.js"></script>
+
+  <!-- ☀️ SUN EASTER EGG -->
+  <div id="beta-popup" style="
+    display: none;
+    position: fixed;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  ">
+    <div style="
+      background: rgba(255,253,231,0.97);
+      border: 2px solid rgba(76,175,80,0.35);
+      border-radius: 20px;
+      padding: 20px 28px;
+      box-shadow: 0 12px 40px rgba(76,175,80,0.25), 0 0 0 4px rgba(255,215,0,0.15);
+      font-family: 'DM Sans', sans-serif;
+    ">
+      <div style="font-size: 24px; margin-bottom: 6px;">☀️ You found it!</div>
+      <div style="font-size: 13px; color: #4E6040; margin-bottom: 14px; font-weight: 500;">Secret beta build — don't share this 🤫</div>
+      <a href="app-debug.apk" download style="
+        display: inline-block;
+        background: linear-gradient(135deg, #4CAF50, #8BC34A);
+        color: white;
+        padding: 11px 26px;
+        border-radius: 100px;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 4px 16px rgba(76,175,80,0.4);
+      ">⬇️ Download Beta APK</a>
+      <div style="margin-top: 12px;">
+        <span onclick="document.getElementById('beta-popup').style.opacity='0'; setTimeout(()=>document.getElementById('beta-popup').style.display='none',500);"
+          style="font-size: 12px; color: #888; cursor: pointer;">dismiss</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let sunClicks = 0;
+    const sun = document.querySelector('.sun');
+    const popup = document.getElementById('beta-popup');
+
+    sun.style.cursor = 'pointer';
+
+    sun.addEventListener('click', () => {
+      sunClicks++;
+
+      // pulse on each click
+      sun.style.transform = 'translateX(-50%) scale(1.2)';
+      setTimeout(() => sun.style.transform = 'translateX(-50%) scale(1)', 150);
+
+      if (sunClicks >= 10) {
+        popup.style.display = 'block';
+        setTimeout(() => popup.style.opacity = '1', 10);
+        sunClicks = 0;
+      }
+    });
+  </script>
+
 </body>
 </html>
