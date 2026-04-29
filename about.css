@@ -145,7 +145,15 @@
 .about-btn-secondary:hover { border-color: rgba(76,175,80,0.45); transform: translateY(-2px); }
 
 @media (max-width: 600px) {
-  .about-stats { flex-direction: column; }
+  .about-stats { flex-direction: column; gap: 10px; }
+  .about-stat { padding: 16px 12px; }
+  .about-stat-val { font-size: 28px; }
   .about-cta-buttons { flex-direction: column; }
-  .about-btn-primary, .about-btn-secondary { text-align: center; }
+  .about-btn-primary, .about-btn-secondary { text-align: center; width: 100%; }
+  .about-cta-box { padding: 20px 16px; }
+  .about-heading { font-size: 18px; }
+  .about-block p { font-size: 13px; }
+  .about-quote { font-size: 15px; padding: 16px; }
+  .about-story { gap: 24px; }
+  .about-hero-section { margin-bottom: 24px; padding-bottom: 20px; }
 }

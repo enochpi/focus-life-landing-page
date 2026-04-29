@@ -266,7 +266,17 @@ nav {
 }
 
 @media (max-width: 600px) {
-  nav { padding: 0 20px; }
-  .policy-card { padding: 36px 20px; }
-  .policy-title { font-size: 32px; }
+  nav { padding: 0 14px; }
+  .nav-inner { gap: 8px; }
+  .nav-logo { font-size: 20px; white-space: nowrap; }
+  .nav-cta { padding: 8px 12px; font-size: 12px; white-space: nowrap; flex-shrink: 0; }
+  .policy-page { padding: 80px 12px 48px; }
+  .policy-card { padding: 28px 16px; border-radius: 20px; }
+  .policy-title { font-size: 26px; }
+  .policy-header { margin-bottom: 20px; padding-bottom: 20px; }
+  .policy-intro { padding: 14px 14px; font-size: 13px; margin-bottom: 20px; }
+  .policy-body { gap: 22px; }
+  .policy-section h2 { font-size: 17px; }
+  .policy-section p, .policy-section ul li { font-size: 13px; }
+  .policy-footer-note { font-size: 11px; margin-top: 24px; }
 }

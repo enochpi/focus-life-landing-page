@@ -299,7 +299,16 @@ nav {
 }
 
 @media (max-width: 600px) {
-  nav { padding: 0 20px; }
-  .contact-card { padding: 36px 20px; }
-  .contact-title { font-size: 28px; }
+  nav { padding: 0 14px; }
+  .nav-inner { gap: 8px; }
+  .nav-logo { font-size: 20px; white-space: nowrap; }
+  .nav-cta { padding: 8px 12px; font-size: 12px; white-space: nowrap; flex-shrink: 0; }
+  .contact-page { padding: 80px 12px 48px; justify-content: flex-start; }
+  .contact-card { padding: 28px 16px; border-radius: 20px; }
+  .contact-title { font-size: 26px; }
+  .contact-sub { font-size: 13px; margin-bottom: 20px; }
+  /* font-size 16px prevents iOS auto-zoom on input focus */
+  .form-input, .form-select, .form-textarea { font-size: 16px; padding: 11px 14px; }
+  .form-submit { font-size: 15px; padding: 14px; }
+  .contact-footer-note { font-size: 11px; }
 }
